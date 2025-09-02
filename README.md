@@ -14,22 +14,22 @@
 ## Instalation
 
 ```
-yarn add --dev @privyid/nuauth
+yarn add --dev @privyid.web/nuauth
 ```
 
 Then, add into `nuxt.config.ts` modules
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@privyid/nuauth'],
-  build  : { transpile: ['@privyid/nuauth'] },
+  modules: ['@privyid.web/nuauth'],
+  build  : { transpile: ['@privyid.web/nuauth'] },
 })
 ```
 
 ## Usage
 
 ```ts
-import { useNuAuth } from '@privyid/nuauth/core'
+import { useNuAuth } from '@privyid.web/nuauth/core'
 
 const {
   token,
@@ -140,7 +140,7 @@ export default defineNuxtConfig({
 3. In your component, explicit the profile you want to use.
 
 ```ts
-import { useNuAuth } from '@privyid/nuauth/core'
+import { useNuAuth } from '@privyid.web/nuauth/core'
 
 const {
   token,
@@ -220,14 +220,14 @@ export default defineNuxtConfig({
 [MIT License](/LICENSE)
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@privyid/nuauth/latest.svg?style=for-the-badge&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/@privyid/nuauth
+[npm-version-src]: https://img.shields.io/npm/v/@privyid.web/nuauth/latest.svg?style=for-the-badge&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@privyid.web/nuauth
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@privyid/nuauth.svg?style=for-the-badge&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/@privyid/nuauth
+[npm-downloads-src]: https://img.shields.io/npm/dm/@privyid.web/nuauth.svg?style=for-the-badge&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@privyid.web/nuauth
 
-[license-src]: https://img.shields.io/npm/l/@privyid/nuauth.svg?style=for-the-badge&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/@privyid/nuauth
+[license-src]: https://img.shields.io/npm/l/@privyid.web/nuauth.svg?style=for-the-badge&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/@privyid.web/nuauth
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?style=for-the-badge&logo=nuxt.js
 [nuxt-href]: https://nuxt.com

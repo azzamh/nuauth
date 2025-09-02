@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   modules   : ['../src/module'],
-  alias     : { '@privyid/nuauth/core': fileURLToPath(new URL('../src/core', import.meta.url)) },
+  alias     : { '@privyid.web/nuauth/core': fileURLToPath(new URL('../src/core', import.meta.url)) },
   typescript: {
     tsConfig: {
       compilerOptions: {

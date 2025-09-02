@@ -60,7 +60,7 @@ export interface ModuleRuntimeConfig {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name         : '@privyid/nuauth',
+    name         : '@privyid.web/nuauth',
     configKey    : 'nuauth',
     compatibility: { nuxt: '^3.0.0' },
   },
@@ -84,8 +84,8 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.runtimeConfig.nuauth                = defu(nuxt.options.runtimeConfig.nuauth, options)
     nuxt.options.runtimeConfig.public.defaultProfile = options.profile.default as string
 
-    if (!nuxt.options.build.transpile.includes('@privyid/nuauth'))
-      nuxt.options.build.transpile.push('@privyid/nuauth')
+    if (!nuxt.options.build.transpile.includes('@privyid.web/nuauth'))
+      nuxt.options.build.transpile.push('@privyid.web/nuauth')
 
     addServerHandler({ route: '/auth/login', handler: resolve('./runtime/login') })
     addServerHandler({ route: '/auth/callback', handler: resolve('./runtime/callback') })

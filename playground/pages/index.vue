@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useNuAuth } from '@privyid/nuauth/core'
+import { useNuAuth } from '@privyid.web/nuauth/core'
 
 const {
   login,

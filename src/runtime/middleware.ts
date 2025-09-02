@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/promise-function-async */
 import { defineNuxtRouteMiddleware } from '#imports'
-import { useNuAuth } from '@privyid/nuauth/core'
+import { useNuAuth } from '@privyid.web/nuauth/core'
 
 declare module '#app' {
   interface PageMeta {
